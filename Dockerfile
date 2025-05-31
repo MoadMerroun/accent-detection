@@ -7,7 +7,17 @@ RUN apt-get update && apt-get install -y \
     curl \
     software-properties-common \
     git \
+    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /app/pretrained_models && chmod -R 777 /app/pretrained_models
+RUN mkdir -p /app/cache && chmod -R 777 /app/cache
+RUN mkdir -p /app/wav2vec2_checkpoints && chmod -R 777 /app/wav2vec2_checkpoints
+RUN mkdir -p /app/audio_cache && chmod -R 777 /app/audio_cache
+
+ENV HF_HOME=/app/cache/hf_home
+ENV SPEECHBRAIN_PRETRAINED_DIR=/app/pretrained_models
+ENV XDG_CACHE_HOME=/app/cache
 
 COPY requirements.txt ./
 COPY src/ ./src/
