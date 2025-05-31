@@ -25,7 +25,7 @@ short_description: Streamlit template space
 
 ```bash
 # Clone repo
-git clone https://huggingface.co/spaces/MoadMerroun/english-accent-detection
+git clone https://huggingface.co/spaces/MoadMerroun/accent-detection
 cd accent-detector
 
 # Create virtual environment
