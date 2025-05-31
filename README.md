@@ -12,7 +12,7 @@ short_description: Streamlit template space
 ---
 
 ## 🚀 How to Use
-👉 [Click here to open the app](https://huggingface.co/spaces/MoadMerroun/english-accent-detection)
+👉 [Click here to open the app](https://huggingface.co/spaces/MoadMerroun/accent-detection)
 
 1. Paste a public video URL (e.g., Google Drive MP4 link)
 2. Click "Analyze"
